@@ -18,3 +18,7 @@ alias ga='git add'
 alias gc='git checkout'
 
 alias sc='source ~/.bash_profile && source ~/.bash_local'
+
+#source ~/.bash_local
+
+[[ -f "$HOME/.bashrc" ]] && . "$HOME/.bashrc"
