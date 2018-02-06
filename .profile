@@ -1,4 +1,5 @@
 [[ -f "$HOME/.bashrc" ]] && . "$HOME/.bashrc"
+[[ -f "$HOME/.bash_local" ]] && . "$HOME/.bash_local"
 
 # Utility
 alias ls='ls -l'
