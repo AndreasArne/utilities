@@ -6,6 +6,8 @@ alias lsa='ls -la'
 alias ..='cd ..'
 alias getBash='rsync ~/git/utilities/.profile ~/'
 alias pushBash='rsync ~/.profile ~/git/utilities/'
+alias ebash='sudo nano ~/.profile'
+alias ebashl='sudo nano ~/.bash_local'
 
 # cd
 alias cgit='cd ~/git/'
