@@ -24,5 +24,4 @@ w
 
 echo "##################################"
 echo "Temperature"
-echo ""
-sensors
+sudo /opt/vc/bin/vcgencmd measure_temp
