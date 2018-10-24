@@ -22,5 +22,10 @@ alias ga='git add'
 alias gc='git checkout'
 alias gd='git diff'
 alias sn='sudo nano'
+alias gsi='git submodule update --init --recursive'
+alias gsu='git submodule update --recursive --remote'
+
+# ssh
+alias sstud='ssh anar12@sweet.student.bth.se'
 
 alias sc='source ~/.profile && source ~/.bash_local'
