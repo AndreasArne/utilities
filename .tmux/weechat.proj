@@ -15,8 +15,7 @@ new-window
 new-session -s weechat
 rename-window 'weechat';
 
-# send-keys 'sstud -t tmux a' C-m  # editor
-# send-keys '/help' C-m  # editor
+send-keys 'sstud -t tmux a' C-m  # editor
 
 # Go to firtst window
 # select-window -p
