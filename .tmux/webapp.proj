@@ -15,9 +15,9 @@ new-window
 new-session -s webapp
 rename-window 'webapp';
 
-send-keys 'webapp; cd ~/git/dbwebb/webapp && atom .' C-m  # editor
+send-keys 'cd ~/git/dbwebb/webapp && atom .' C-m  # editor
 split-window -h -p 40 # build window (webpack, etc)
-# send-keys 'z webapp && npm start' C-m
+send-keys 'cd ~/git/dbwebb/webapp' C-m
 # split-window -v -p 80             # cli
 # send-keys 'mocha --recursive'     # don't execute
 # split-window -v -p 50             # test runner?
