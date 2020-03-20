@@ -16,12 +16,13 @@ new-session -s webapp
 rename-window 'webapp';
 
 send-keys 'cd ~/git/dbwebb/webapp && atom .' C-m # C-m can be replaced by Enter. Dont know what C-m means
+
 split-window -h -p 40 # build window (webpack, etc)
 send-keys 'cd ~/git/dbwebb/webapp' C-m
-send-keys 'powershell.exe start $(wslpath -w $(wich Postman.exe))' C-m
+send-keys 'powershell.exe start $(wslpath -w $(which Postman.exe))' C-m
 
-# split-window -v -p 80             # cli
-# send-keys 'mocha --recursive'     # don't execute
+split-window -v -p 50             # npm start simple-server
+send-keys 'cd ~/git/dbwebb/webapp' C-m     # don't execute
 # split-window -v -p 50             # test runner?
 # select-pane -L; # select the left pane; atom
 
