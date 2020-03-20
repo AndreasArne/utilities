@@ -1,0 +1,18 @@
+# vi: filetype=tmux
+
+# Restoring tmux setups
+# Use this together with the `tmux-restore` function, as in
+# $ tmux-r util
+#
+# Based on
+# https://stackoverflow.com/a/40125397/200987
+# https://stackoverflow.com/a/40009032/200987
+# https://github.com/fatso83/dotfiles/commit/35a7ed
+
+new-window
+
+# window 0 - main window in the left pane and 3 minor windows in the right pane
+new-session -s util
+rename-window 'util';
+
+send-keys 'cd ~/git/utilities && atom .' C-m # C-m can be replaced by Enter. Dont know what C-m means
