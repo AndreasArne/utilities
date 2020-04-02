@@ -8,5 +8,5 @@ sudo cp /media/backup/backup_packages /media/discworld/backup/
 # apt-get dselect-upgrade
 
 # backup files
-sudo tar czf /media/backup/backup.tar.gz --exclude=/backup_packages --exclude=/backup.tar.gz --exclude=/bin --exclude=/home/desktop --exclude=/media --exclude=/dev --exclude=/mnt --exclude=/proc  --exclude=/sys --exclude=/tmp /
+sudo tar czf /media/backup/backup.tar.gz --exclude=/backup_packages --exclude=/backup.tar.gz --exclude=/bin --exclude=/home/desktop --exclude=/var/lib/docker/overlay2 --exclude=/media --exclude=/dev --exclude=/mnt --exclude=/proc  --exclude=/sys --exclude=/tmp /
 sudo cp /media/backup/backup.tar.gz /media/discworld/backup
