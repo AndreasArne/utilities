@@ -50,7 +50,7 @@ tmux-r () {
     fi
 }
 
-# link tmux project settings to .tmux
+# copy tmux project settings
 linktmux () {
     SOURCE="${1:-$HOME/git/utilities}"
     DEST="${2:-$HOME}/.tmux"
@@ -67,3 +67,6 @@ linktmux () {
     #    ln -sf "$file" "${DEST}/"
     # done
 }
+
+# disable bell sound in some tools like man pages and less.
+export LESS="$LESS -R -Q"
