@@ -1,0 +1,21 @@
+# vi: filetype=tmux
+
+# Restoring tmux setups
+# Use this together with the `tmux-restore` function, as in
+# $ tmux-r skorstten
+#
+# Based on
+# https://stackoverflow.com/a/40125397/200987
+# https://stackoverflow.com/a/40009032/200987
+# https://github.com/fatso83/dotfiles/commit/35a7ed
+
+new-window
+
+# window 0 - main window in the left pane and 3 minor windows in the right pane
+new-session -s skorstten
+rename-window 'skorstten';
+
+send-keys 'atom;sskor -t tmux a' C-m  # editor
+
+# Go to firtst window
+# select-window -p
