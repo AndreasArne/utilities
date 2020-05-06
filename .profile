@@ -1,6 +1,8 @@
 [[ -f "$HOME/.bashrc" ]] && . "$HOME/.bashrc"
 [[ -f "$HOME/.bash_local" ]] && . "$HOME/.bash_local"
 
+bind 'set mark-symlinked-directories on' # adds / on tab completion for symlinks
+
 # Utility
 alias ls='ls -l'
 alias lsa='ls -la'
