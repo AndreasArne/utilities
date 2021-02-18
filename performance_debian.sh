@@ -3,9 +3,14 @@ echo "Card usage"
 du -hs
 
 echo "##################################"
-echo "HDD usage"
+echo "discworld usage"
 echo ""
 df -h ~/raid
+
+echo "##################################"
+echo "lancache usage"
+echo ""
+df -h /media/lancache
 
 echo "##################################"
 echo "RAM usage"
