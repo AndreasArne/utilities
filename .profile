@@ -1,5 +1,6 @@
 [[ -f "$HOME/.bashrc" ]] && . "$HOME/.bashrc"
 [[ -f "$HOME/.bash_local" ]] && . "$HOME/.bash_local"
+export PATH="$PATH:$HOME/.local/bin"
 
 bind 'set mark-symlinked-directories on' # adds / on tab completion for symlinks
 
