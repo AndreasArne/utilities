@@ -14,6 +14,7 @@ alias ebash='nano ~/.profile'
 alias ebashl='nano ~/.bash_local'
 alias sc='source ~/.profile && source ~/.bash_local'
 alias list-functions='declare | egrep '\''^[[:alpha:]][[:alnum:]_]* ()'\''; echo -e "\nTo print a function definition, issue \`type function-name\` "'
+alias scvenv='source .venv/bin/activate'
 
 # cd
 alias cgit='cd ~/git/'
