@@ -35,7 +35,7 @@ alias gsu='git submodule update --recursive --remote'
 alias sstud='ssh -i ~/.ssh/dbwebb anar12@seekers.student.bth.se'
 
 # dbwebb
-alias mlpc='(cd ~/git/website && make docker && curl -s localhost:8080 > /dev/null)'
+alias mlpc='(cd ~/git/dbwebb/website && make docker && curl -s localhost:8080 > /dev/null)'
 
 
 
