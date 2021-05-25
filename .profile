@@ -13,8 +13,8 @@ alias pushBash='rsync ~/.profile ~/git/utilities/'
 alias ebash='nano ~/.profile'
 alias ebashl='nano ~/.bash_local'
 alias sc='source ~/.profile && source ~/.bash_local'
-alias list-functions='declare | egrep '\''^[[:alpha:]][[:alnum:]_]* ()'\''; echo -e "\nTo print a function definition, issue \`type function-name\` "'
 alias scvenv='source .venv/bin/activate'
+
 
 # cd
 alias cgit='cd ~/git/'
@@ -34,11 +34,12 @@ alias gsu='git submodule update --recursive --remote'
 # ssh
 alias sstud='ssh -i ~/.ssh/dbwebb anar12@seekers.student.bth.se'
 
-# docker
-alias docker='sudo docker'
-alias docker-machine='sudo docker-machine'
+# dbwebb
+alias mlpc='(cd ~/git/website && make docker && curl -s localhost:8080 > /dev/null)'
 
 
+
+alias list-functions='declare | egrep '\''^[[:alpha:]][[:alnum:]_]* ()'\''; echo -e "\nTo print a function definition, issue \`type function-name\` "'
 # tmux
 # https://github.com/fatso83/dotfiles/commit/35a7ed
 # https://github.com/fatso83/dotfiles/commit/43d481956c73826cc9cfe1d971e91e2ae3c3dfe9#diff-64848524db7ba4dea710a785457b57ecR189
