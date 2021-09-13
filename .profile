@@ -32,8 +32,8 @@ alias gsi='git submodule update --init --recursive'
 alias gsu='git submodule update --recursive --remote'
 
 # ssh
-alias sstud='ssh -i ~/.ssh/dbwebb anar12@seekers.student.bth.se'
-
+alias sstud='dbwebb login'
+alias sumb='ssh -i ~/.ssh/umbridge.pem deploy@umbridge.arnesson.dev'
 # dbwebb
 alias mlpc='(cd ~/git/dbwebb/website && make docker && curl -s localhost:8080 > /dev/null)'
 
