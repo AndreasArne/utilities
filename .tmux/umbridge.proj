@@ -1,0 +1,40 @@
+# vi: filetype=tmux
+
+# Restoring tmux setups
+# Use this together with the `tmux-restore` function, as in
+# $ tmux-r umbridge
+#
+# Based on
+# https://stackoverflow.com/a/40125397/200987
+# https://stackoverflow.com/a/40009032/200987
+# https://github.com/fatso83/dotfiles/commit/35a7ed
+
+new-window
+
+# window 0 - main window in the left pane and 4 minor windows in the right pane
+new-session -s umbridge
+rename-window 'umbridge';
+
+send-keys 'cd ~/git/dbwebb/umbridge && scvenv && code .' C-m # C-m can be replaced by Enter. Dont know what C-m means
+
+split-window -h -p 50
+send-keys 'sudo tail -f /var/log/supervisor/umbridge-stdout---supervi*' C-m
+
+
+split-window -v -p 50
+send-keys 'sudo tail -f /var/log/umbridge/gunicorn-error.log' C-m     # don't execute
+
+select-pane -L;
+
+split-window -h -p 50
+send-keys 'sudo tail -f /var/log/supervisor/umbridge-stderr---supervi*' C-m
+
+split-window -v -p 50
+send-keys 'sudo tail -f /var/log/umbridge/gunicorn-access.log' C-m     # don't execute
+
+# go to first window
+select-window -p
+select-window -p
+select-window -p
+select-window -p
+select-window -p
