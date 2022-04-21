@@ -125,6 +125,12 @@ function parse_git_dirty {
 	fi
 }
 
+
+net_activate() {
+# for fixing dns error in WSL
+sudo bash -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf'
+}
+
 export PS1="\u:\[\e[32m\]\w\[\e[m\]:\[\e[33m\]\`parse_git_branch\`\[\e[m\]\\$ "
 export EDITOR=nano
 # disable bell sound in some tools like man pages and less.
