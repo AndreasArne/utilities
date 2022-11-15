@@ -135,3 +135,6 @@ export PS1="\u:\[\e[32m\]\w\[\e[m\]:\[\e[33m\]\`parse_git_branch\`\[\e[m\]\\$ "
 export EDITOR=nano
 # disable bell sound in some tools like man pages and less.
 export LESS="$LESS -R -Q"
+
+# Kör för att lägga till git kommando
+# git config --global --add alias.permission-reset '!git diff -p -R --no-ext-diff --no-color | grep -E "^(diff|(old|new) mode)" --color=never | git apply'
